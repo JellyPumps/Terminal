@@ -10,15 +10,22 @@ Collect information and solve a series of puzzles to escape the **Terminal** and
 Changelog:
 
 0.3: 
+  
   ->Fixed display bug
+  
   ->Improved FPS
+  
   ->Removed sky and floor textures
+  
   ->Added ceiling and floor via ***math***
+  
   ->Walls exist
+
 0.2:
   ->level system, floorcasting
 
 Known issues:
 
 0.2: 
+  
   ->Game world does not utilize the entire window
