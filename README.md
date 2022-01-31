@@ -11,27 +11,25 @@ Changelog:
 
 0.3: 
   
-  ->Fixed display bug
+  >Fixed display bug
   
-  ->Improved FPS
+  >Improved FPS
   
-  ->Removed sky and floor textures
+  >Removed sky and floor textures
   
-  ->Added ceiling and floor via ***math***
+  >Added ceiling and floor via ***math***
   
-  ->Walls exist
+  >Walls exist
 
 ---
 
 0.2:
-  ->level system, floorcasting
+  >level system, floorcasting
 
 ---
 
 Known issues:
 
----
-
 0.2: 
   
-  ->Game world does not utilize the entire window
+  >Game world does not utilize the entire window
