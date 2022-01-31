@@ -21,10 +21,16 @@ Changelog:
   
   ->Walls exist
 
+---
+
 0.2:
   ->level system, floorcasting
 
+---
+
 Known issues:
+
+---
 
 0.2: 
   
