@@ -6,7 +6,7 @@ import time
 from menu import *
 from gamestate import *
 #---
-#Removed GameState(), moved gamestate.py
+#Removed GameState(), moved to gamestate.py
 #---
 class Game():
     def __init__(self):
@@ -26,15 +26,13 @@ class Game():
         self.options=Options(self)
         self.credits=Credits(self)
         self.curr_menu=self.main_menu
-        #CAMERAAAA
+        #GAMEMEMEMEMEMEMEMEMEMEMEMEMEMEMEMEMEMe
         self.HALFVRES=300
         self.mod=self.DISPLAY_W/60 #Scaling factor(60 deg fov)
         self.posx,self.posy,self.rot=0,0,0
-        self.frame=np.ones([self.DISPLAY_W,self.DISPLAY_H,3])
-        self.ns=self.HALFVRES/((self.HALFVRES+0.1-np.linspace(0,self.HALFVRES,self.HALFVRES)))#depth
-        self.cos22=np.cos(np.deg2rad(np.linspace(-30,-30,self.DISPLAY_W)/self.mod))#perspective correction
-        self.shade=0.4+0.6*(np.linspace(0,self.HALFVRES,self.HALFVRES)/self.HALFVRES)
-        self.shade=np.dstack((self.shade,self.shade,self.shade))
+        self.size=5
+        self.maph=np.random.choice([0,0,0,1],(self.size,self.size))
+        self.frame=np.random.uniform(0,1,(self.DISPLAY_W,self.DISPLAY_H,3))
         #---
         self.game_state=GameState(self)
         #---
@@ -44,7 +42,7 @@ class Game():
     #
     def game_loop(self):
         while self.playing:
-            self.clock.tick(30)
+            self.clock.tick(90)
             self.fps=int(self.clock.get_fps())
             pygame.display.set_caption("Terminal - FPS: "+str(self.fps))
             self.check_events()
@@ -54,7 +52,7 @@ class Game():
             #self.draw_text('Placeholder',20,self.DISPLAY_W/2,self.DISPLAY_H/2)
             self.game_state.state_manager()
             self.window.blit(self.display,(0,0)) 
-            self.posx,self.posy,self.rot=self.game_state.movement(self.posx,self.posy,self.rot,pygame.key.get_pressed(),self.clock.tick()/200)
+            self.posx,self.posy,self.rot=self.game_state.movement(self.posx,self.posy,self.rot,pygame.key.get_pressed(),self.clock.tick()/500)
             pygame.display.update()
     def check_events(self):
         for event in pygame.event.get():
