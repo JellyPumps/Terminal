@@ -21,8 +21,6 @@ Changelog:
   
   >Walls exist
 
----
-
 0.2:
   >level system, floorcasting
 
