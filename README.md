@@ -34,6 +34,8 @@ Known issues:
   
   >Game world does not utilize the entire window
 
+---
+
 Planned Updates:
 
 0.4:
