@@ -33,3 +33,8 @@ Known issues:
 0.2: 
   
   >Game world does not utilize the entire window
+
+Planned Updates:
+
+0.4:
+ >Collison with walls, exit points in maps.
