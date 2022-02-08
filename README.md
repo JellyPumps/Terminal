@@ -9,6 +9,17 @@ Collect information and solve a series of puzzles to escape the **Terminal** and
 
 Changelog:
 
+0.4:
+  >Ported to C for better implementation of future features.
+  
+  >Improved FPS.
+  
+  >Shaders
+  
+  >Wall collision.
+  
+  >--Menu Screen Does Not Exist--
+
 0.3: 
   
   >Fixed display bug.
@@ -39,5 +50,8 @@ Known issues:
 
 Planned Updates:
 
-0.4:
- >Collison with walls, exit points in maps.
+0.5:
+  >Menu screen, exit points.
+
+~~0.4:
+ >Collison with walls, exit points in maps.~~
